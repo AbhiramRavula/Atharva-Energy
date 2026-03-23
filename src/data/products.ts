@@ -35,7 +35,7 @@ export const products = [
     tagline: "Advanced Energy Storage Systems",
     description:
       "Scalable LFP battery packs for backup power, peak shaving, and off-grid operations. Built for industrial reliability with integrated BMS, thermal management, and remote monitoring.",
-    image: "/images/battery-pack-v2.png",
+    image: "/images/battery-pack-v3.png",
     features: [
       "LFP / NMC cell chemistry",
       "Integrated Battery Management System (BMS)",

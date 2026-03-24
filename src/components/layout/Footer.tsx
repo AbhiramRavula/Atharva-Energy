@@ -18,7 +18,7 @@ export default function Footer() {
     <footer className="bg-brand-dark text-gray-300">
       {/* Main footer */}
       <div className="container-max section-padding !py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-4">
@@ -65,6 +65,30 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+
+          {/* Map column */}
+          <div className="lg:col-span-1">
+            <h3 className="text-white font-heading font-semibold text-sm uppercase tracking-wider mb-4">
+              Our Factory
+            </h3>
+            <div className="rounded-lg overflow-hidden border border-white/10 h-48 bg-gray-800 shadow-lg relative group">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d99.65693777506092!2d78.72309804909345!3d17.458345532768192!2m2!1f0!2f0.5683355894549824!3m2!1i1024!2i768!4f48.657720645186075!3m3!1m2!1s0x3bcb76966c30bd1b%3A0xa263934d5c7b900d!2sFP5F%2B78R%2C%20Telangana%20501301!5e1!3m2!1sen!2sin!4v1774369738256!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Atharva Energy Factory Location"
+                className="grayscale-[0.2] contrast-[1.1] brightness-[0.9] hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <p className="mt-3 text-[10px] text-gray-400 font-mono flex items-center gap-1 leading-none uppercase tracking-widest">
+              <span className="text-brand-gold text-xs">📍</span>
+              FP5F+78R, Telangana 501301
+            </p>
+          </div>
         </div>
       </div>
 
